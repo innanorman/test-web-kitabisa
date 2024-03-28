@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './scss/main.scss'
 import Card from './component/Card'
+import DataCard from '../public/campaign.json'
 
 function App() {
   const [result, setResult] = useState([]);
@@ -39,6 +40,8 @@ function App() {
     // eslint-disable-next-line
     setResult(sortedData) 
   }
+
+
   
 
   const handleSelectType = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -62,7 +65,7 @@ function App() {
           >
             <option value="default" disabled>Choose sort type</option>
             <option value="goal">Sort by Donating Goals</option>
-            <option value="days_remaining">Sort by Donating Days</option>
+            <option value="days">Sort by Donating Days</option>
           </select>
           </div>
         </header>
