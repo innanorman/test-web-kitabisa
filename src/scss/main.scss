@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body{
+  font-family: "Rubik", sans-serif;
+}
+
+.card{
+  height: 325px;
+  .img-wrapper{
+    height: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+
+  .content-card{
+    height: 125px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .card {
+    height: 300px;
+    .img-wrapper{
+      height: 155px;
+  
+      img {
+        width: 100%;
+      }
+    }
+
+    .content-card{
+      height: calc(100% - 155px);
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .card {
+    height: 350px;
+    .img-wrapper{
+      height: 200px;
+  
+      img {
+        width: 100%;
+      }
+    }
+
+    .content-card{
+      height: calc(100% - 200px);
+    }
+  }
+}
